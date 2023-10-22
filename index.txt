@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+     <meta charset="utf-8">
+     <title>ZIELCHAIN SROT</title>
+     <link rel="stylesheet" href="reset.css">
+     <link rel="stylesheet" href="style.css">
+<style type="text/css">
+
+p{
+          text-align:  center;
+}
+input{
+     font-size:20px;
+     margin:10px 0px 20px 0px;
+     padding:0px 10px 0px 10px;
+     border-radius:8px;
+}
+</style>
+
+<script>
+
+alert("WELCOME TO ZIELCHAIN SROT !! ")
+
+var sp1;
+var sp2;
+var sp3;
+
+function setImage(){
+    var cg1=1;
+    var cg2=0;
+    var cg3=0;
+
+    var img =["pt1.png","pt2.png","pt3.png","pt4.png","pt5.png"]; 
+
+    var loopup1=function(){
+
+        document.getElementById('img1').src = img[cg1++];
+
+        if(cg1 > 4){
+           cg1 = 0;
+        }
+    }
+
+   sp1=setInterval(loopup1 ,200);
+
+    var loopup2=function(){
+
+        document.getElementById('img2').src = img[cg2++];
+
+        if(cg2 > 4){
+           cg2 = 0;
+        }
+    }
+
+   sp2=setInterval(loopup2 ,150);
+
+    var loopup3=function(){
+
+        document.getElementById('img3').src = img[cg3++];
+
+        if(cg3 > 4){
+           cg3 = 0;
+        }
+    }
+
+   sp3=setInterval(loopup3 ,100);
+
+}
+
+function stop_slot1(){
+    clearInterval(sp1);
+}
+
+function stop_slot2(){
+    clearInterval(sp2);
+}
+
+function stop_slot3(){
+    clearInterval(sp3);
+}
+
+</script>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+        </header>
+<p>
+
+    <input type="button" value="START" onClick="setImage( )">
+
+    <br><br>
+
+    <img src="pt0.png" id="img1">
+    <img src="pt0.png" id="img2">
+    <img src="pt0.png" id="img3">
+
+    <br><br>
+
+    <input type="button" value="STOP1" onClick="stop_slot1()">
+    <input type="button" value="STOP2" onClick="stop_slot2()">
+    <input type="button" value="STOP3" onClick="stop_slot3()">
+
+
+<footer id="footer">
+</footer>
+</div>
+</body>
+</html>

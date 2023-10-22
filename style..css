@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* -- -- */
+/* 1.共通
+/* -- -- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+ color: #4d4d4d;
+ font-size: 14px;
+ font-family: メイリオ ,meiryo,"ヒラギノ角ゴ pro W3","Hiragino Kaku Gothic Pro","MS Pゴシック",sans-serif;
+ line-height: 1.6; 
+}
+
+a {
+  color: #007de1;
+  transition: 0.5s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* -- -- */
+/* 2.レイアウト
+/* -- -- */
+
+#wrapper {
+  margin: 0 auto;
+  width: 960px;  
+}
+
+/* -- -- */
+/* 3.ヘッダー
+/* -- -- */
+
+header {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+h1 {
+  color: #999999;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+#header-logo img {
+  width: 300px;
+  height: 60px; 
+}
+
+/* -- -- */
+/* 4.グローバルナビゲーション
+/* -- -- */
+
+#gNav {
+  margin-bottom: 25px;
+}
+
+#gNav ul{
+  display: -webkit-flex;
+  display: flex;
+}
+
+#gNav li {
+  border-left: 1px solid #7dceec;
+  height: 45px;
+  text-align: center;
+  width: 33.3%
+}
+
+#gNav li:last-child {
+  border-left: 1px solid #7dceec;
+}
+
+#gNav a {
+  color: #4D4D4D;
+  display: block;
+  font-size: 11px;
+  height: 45px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+#gNav a:hover {
+  background-color: #BDF5FE;
+}
+
+#gNav a span {
+  color: #007de1;
+  display: block;
+  font-family: arial;
+  font-sizw: 10px;
+}
+
+#gNav .current-menu-item a, #gNav .current-menu-item a span {
+  background-color: #2AA8E5;
+  color: #ffffff;
+}
+
+/* -- -- */
+/* 5.コンテンツ
+/* -- -- */
+
+#contents {
+  margin-bottom: 60px;
+}
+
+/* -- -- */
+/* 6.フッター
+/* -- -- */
+
+#footer {
+  background: #2AA8E5;
+  color: #ffffff;
+  padding: 25px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#footer-left {
+  width: 300px;
+}
+
+#footer-right{
+  width: 610px;
+}
+
+#footer-logo img{
+  margin-bottom: 15px;
+  width: 230px;
+  height: 40px;
+}
+
+#address{
+  font-size: 12px;
+}
+
+#copyright{
+  text-align: right;
+  display: block;
+}
+
+/* -- -- */
+/* 7.フッターナビゲーション
+/* -- -- */
+
+#fNav{
+  margin-bottom: 30px;
+}
+
+#fNav ul{
+  display: -webkit-flex;
+  display: flex;
+  width: 518px;
+  margin-left: auto;
+}
+
+#fNav li{
+  padding: 0 15px;
+  border-right: 1px solid #ffffff;
+}
+
+#fNav li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+#fNav a{
+  color #ffffff;
+  text-decoration: none;
+}
+
+#fNav a:hover {
+  background-color: #ffffff;
+  color: #2AA8E5;
+  opacity: 1;
+}
+
+/* -- -- */
+/* 8.トップ専用
+/* -- -- */
+
+#contents .inner {
+  margin-bottom: 25px;
+}
+
+#main_visual {
+  width: 100%;
+}
+
+h2 {
+  background-color: #2AA8E5;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 25px;
+  padding: 0.5em 1em; 
+}
+
+#news li{
+  border-bottom: 1px dotted #aaaaaa;
+  padding: 0.2em;
+}
+
+#our-business {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.biz-box {
+  padding: 0 25px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #999999;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding: 0.2em 1em
+}
+
+.biz-box h3 {
+  text-align: center;
+}
+
+.biz-box img {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
